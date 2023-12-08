@@ -9,8 +9,8 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $allBerita = Berita::get();
-        return view('pages.home', compact('allBerita'));
+        $berita = Berita::get();
+        return view('pages.home', compact('berita'));
     }
     public function detail($id)
     {

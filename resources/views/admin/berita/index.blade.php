@@ -26,7 +26,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($allBerita as $item)
+                            @foreach ($berita as $item)
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>{{ Str::limit($item->judul, 10) }}</td>
